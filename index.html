@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey for Web-Design</h1>
+    <p id="parragraph">
+      This is a survey to know about your knowledge about Web-Design
+    </p>
+
+    <form id="forSurvey" action="POST" method="post">
+      <label for="name" id="name-label"> </label>
+      <input type="text" name="name" id="name" placeholder="Enter your name" />
+
+      <label for="email" id="email-label"></label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your Email"
+      />
+
+      <label for="number" id="number-label"></label>
+      <input
+        type="number"
+        name="number"
+        id="number"
+        min="1"
+        max="20"
+        placeholder="Enter a Number"
+      />
+
+      <label for="selectElement">elementos</label>
+      <select name="selectElement" id="selectId">
+        <option value="1" default>option1</option>
+        <option value="2">option2</option>
+      </select>
+
+      <label for="radioElement">elementos Radios</label>
+      <input type="radio" id="opcion1" name="grupo_opciones" value="valor1" />
+      <label for="opcion1">Opción 1</label><br />
+
+      <input type="radio" id="opcion2" name="grupo_opciones" value="valor2" />
+      <label for="opcion2">Opción 2</label><br />
+
+      <label for="checkElement">elementos Check</label>
+      <input type="checkbox" name="name-checkbox1" id="checkbox1" />
+      <input type="checkbox" name="name-checkbox2" id="checkbox2" />
+      <input type="checkbox" name="name-checkbox3" id="checkbox3" />
+      <input type="checkbox" name="name-checkbox4" id="checkbox4" />
+
+      <label for="name-textarea">comentarios</label>
+      <textarea name="name-textarea" id="" cols="30" rows="10"></textarea>
+
+      <button type="submit">send</button>
+    </form>
+  </body>
+</html>
